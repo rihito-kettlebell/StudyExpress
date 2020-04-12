@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 let port = process.env.PORT || 3000;
 
 //　router
-let router = require("/routes/v1/");
+let router = require("./routes/v1/");
 app.use("/api/v1/",router);
 // 起動
 app.listen(port);
