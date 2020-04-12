@@ -1,7 +1,7 @@
 // ライブラリ読み込み
 let express = require("express");
 let app = express();
-let bodyParser = require(body-parser);
+let bodyParser = require("body-parser");
 
 //body-parserの設定
 app.use(bodyParser.urlencoded({ extended: true}));
@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 let port = process.env.PORT || 3000;
 
 //GET 3000/api/v1
-app.get("/api/v1" ,function(req,res){
+app.get("/api/v1/" ,function(req,res){
   res.json({
     message:"Hello, World"
   })
